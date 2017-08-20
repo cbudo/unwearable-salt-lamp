@@ -21,8 +21,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class Request {
-    // home: 67.172.88.171     work: 70.88.106.201   home-other: 10.0.0.10    occ:10.15.18.226
-    private String ip = "http://192.168.86.104:7777/";
+    private String ip = "192.168.12.7/";
     private String url;
     private JSONObject json;
     private String[] jsonKeys;
