@@ -9,14 +9,14 @@ public class GenericResponse {
     private String error;
     private String success;
     private String endpoint;
-    private String data;
+    private String Data;
 
     public GenericResponse(String published_at, String error, String success, String endpoint, String data) {
         this.published_at = published_at;
         this.error = error;
         this.success = success;
         this.endpoint = endpoint;
-        this.data = data;
+        this.Data = data;
     }
 
     public String getPublished_at() {
@@ -45,11 +45,11 @@ public class GenericResponse {
     }
 
     public String getData() {
-        return data;
+        return Data;
     }
 
     public void setData(String data) {
-        this.data = data;
+        this.Data = data;
     }
 
     public String getEndpoint() {

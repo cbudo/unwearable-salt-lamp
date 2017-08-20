@@ -1,19 +1,26 @@
 package tech.unwearable.magicsaltunwearable.contract;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 /**
  * Created by budoc on 8/19/2017.
  */
 
+@JsonIgnoreProperties(ignoreUnknown=true)
 public class ColorsData {
-    private String color;
+    @JsonProperty("name")
+    private String name;
+    @JsonProperty("hex")
     private String hex;
 
-    public String getColor() {
-        return color;
+    public String getName() {
+        return name;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getHex() {
@@ -24,9 +31,11 @@ public class ColorsData {
         this.hex = hex;
     }
 
-    public ColorsData(String color, String hex) {
+    @JsonCreator
 
-        this.color = color;
+    public ColorsData(@JsonProperty("name") String color, @JsonProperty("hex") String hex) {
+
+        this.name = color;
         this.hex = hex;
     }
 }

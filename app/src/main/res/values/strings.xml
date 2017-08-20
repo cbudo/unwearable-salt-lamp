@@ -2,4 +2,13 @@
     <string name="app_name">Literally Unwearable</string>
     <string name="set_light_color">Set Light Color:</string>
     <string name="message">Message:</string>
+    <string name="enable_notifications">Enable Notifications</string>
+    <string name="send_color">Send Color</string>
+    <string name="send_message">Send Message</string>
+
+    <string name="notification_listener_service">"Notification Listener Service"</string>
+    <string name="notification_listener_service_explanation">"For the app to work you need to enable the Notification Listener Service. Enable it now?"</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
 </resources>
