@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">MagicSaltUnwearable</string>
+    <string name="app_name">Literally Unwearable</string>
+    <string name="set_light_color">Set Light Color:</string>
+    <string name="message">Message:</string>
 </resources>
